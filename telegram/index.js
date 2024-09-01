@@ -23,7 +23,7 @@ bot.start((ctx) => {
 
 // Echo the received message
 bot.on('text', (ctx) => {
-      const userInput = ctx.message.chat.id;
+      const userInput = ctx.message.first_name;
   ctx.reply('You said:' + userInput);
 });
 

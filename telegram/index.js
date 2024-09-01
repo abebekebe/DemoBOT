@@ -19,7 +19,6 @@ const bot = new Telegraf(process.env.BOT);
 // Simple text response
 bot.start((ctx) => {
   ctx.reply('Welcome! This is your new Telegram bot.');
-     ctx.reply('Welcome! This is your new Telegram bot.');
 });
 
 // Echo the received message

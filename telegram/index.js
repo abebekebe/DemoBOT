@@ -23,8 +23,8 @@ bot.start((ctx) => {
 
 // Echo the received message
 bot.on('text', (ctx) => {
-    
-  ctx.reply("You said: ");
+      const userInput = ctx.message.text;
+  ctx.reply('You said:' + userInput);
 });
 
 // Listen for /help command

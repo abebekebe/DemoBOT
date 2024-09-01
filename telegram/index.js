@@ -1,9 +1,13 @@
 const { Telegraf } = require('telegraf');
+const express = require('express');
 
-const port = 3100;
+const app = express();
+
+const port = 3000;
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
+
 
 // Replace 'YOUR_BOT_TOKEN' with the token you received from BotFather
 const bot = new Telegraf(process.env.BOT);

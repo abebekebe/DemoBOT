@@ -24,8 +24,8 @@ bot.start((ctx) => {
 
 // Echo the received message
 bot.on('text', (ctx) => {
-    const chatId = ctx.massage.text
-  ctx.reply("You said: " + chatId);
+    
+  ctx.reply("You said: ");
 });
 
 // Listen for /help command

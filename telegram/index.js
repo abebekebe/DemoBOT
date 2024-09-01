@@ -27,11 +27,11 @@ bot.on('text', (ctx) => {
     const userInput = msg.text;
     const msg_id = msg.message_id;
     
-  ctx.reply('You said: ' + userInput + " chatId: " + chatId + " messageId: " + msg_id);
+  ctx.reply('You said: ' + userInput + " chatId: " + chatId );
 });
 
 // Listen for /help command
-bot.command('help', (ctx) => {
+bot.command('/help', (ctx) => {
   ctx.reply('How can I help you?');
 });
 

@@ -23,8 +23,11 @@ bot.start((ctx) => {
 
 // Echo the received message
 bot.on('text', (ctx) => {
-     const userInput = ctx.message.text;
-  ctx.reply('You said:' + userInput);
+    const chatId = msg.chat.id;
+    const userInput = msg.text;
+    const msg_id = msg.message_id;
+    
+  ctx.reply('You said: ' + userInput + " chatId: " + chatId + " messageId: " + msg_id);
 });
 
 // Listen for /help command

@@ -27,7 +27,7 @@ bot.on('text', (ctx) => {
     const userInput = msg.text;
     const msg_id = msg.message_id;
     
-  ctx.reply('You said: ' + userInput + " chatId: " + chatId );
+  ctx.reply('You said: ' + userInput  );
 });
 
 // Listen for /help command

@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send("Bot is alive");
+    res.send("Bot is alive!");
 });
 
 const port = 3000;
@@ -28,7 +28,7 @@ bot.on('text', (ctx) => {
 });
 
 // Listen for /help command
-bot.command('/help', (ctx) => {
+bot.help('/help', (ctx) => {
   ctx.reply('How can I help you?');
 });
 

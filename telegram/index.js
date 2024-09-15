@@ -22,10 +22,7 @@ bot.start((ctx) => {
 });
 
 // Listen for /help command
-bot.help((ctx) => {
-  ctx.reply('How can I help you?');
-});
-
+bot.help((ctx) => ctx.reply('Send me a sticker'))
 // Echo the received message
 bot.on('text', (ctx) => {
       const userInput = ctx.message.first_name;

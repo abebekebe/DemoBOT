@@ -28,7 +28,7 @@ bot.on('text', (ctx) => {
 });
 
 // Listen for /help command
-bot.help('/help', (ctx) => {
+bot.help((ctx) => {
   ctx.reply('How can I help you?');
 });
 

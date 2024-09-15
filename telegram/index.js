@@ -21,15 +21,15 @@ bot.start((ctx) => {
   ctx.reply('Welcome! This is your new Telegram bot.');
 });
 
+// Listen for /help command
+bot.help((ctx) => {
+  ctx.reply('How can I help you?');
+});
+
 // Echo the received message
 bot.on('text', (ctx) => {
       const userInput = ctx.message.first_name;
   ctx.reply('You said:' + userInput);
-});
-
-// Listen for /help command
-bot.help((ctx) => {
-  ctx.reply('How can I help you?');
 });
 
 // Error handling
